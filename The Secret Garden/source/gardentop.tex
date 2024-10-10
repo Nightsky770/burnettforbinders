@@ -1,6 +1,6 @@
 \documentclass[
-a5paper,
-%paper=5.5in:8.5in,
+%a5paper,
+paper=5.5in:8.5in,
 ]{scrbook} 
 
 \usepackage{bindery}
@@ -8,12 +8,12 @@ a5paper,
 \usepackage{dropcaps}
 \usepackage{illustrations}
 
-\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thechapter}{\Roman{chapter}}
 \setdropcaps{DecoratedRomanInitials.ttf}
 
 
 
-\DeclareTOCStyleEntry[linefill=\TOCLineLeaderFill,dynnumwidth=true]{chapter}{chapter}
+\DeclareTOCStyleEntry[linefill=\TOCLineLeaderFill]{chapter}{chapter}
 %\DeclareTOCStyleEntry[beforeskip=.1cm,numwidth=0pt,entrynumberformat=\hideentrynumber,linefill=\TOCLineLeaderFill]{tocline}{figure}
 
 
@@ -21,8 +21,6 @@ a5paper,
 \addtokomafont{disposition}{\normalfont}
 \automark{chapter}
 \lehead{The Secret Garden}
-\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \arabic{chapter}:\ #1}{}}
-%we're using Roman numerals in the chapter names themselves and it's a PITA to decode Roman numerals: redefine chaptermark to use Arabic numerals in the header
 \rohead{\leftmark}
 
 \flushbottom
