@@ -1,29 +1,18 @@
 \documentclass[
-%a5paper,
-paper=5.5in:8.5in,
+a5paper,
+%paper=5.5in:8.5in,
 ]{scrbook} 
 
-\usepackage{bindery}
-\usepackage{sparsetoc}
+
+\title{A Little Princess}
+
+\usepackage[namedChapters]{bindery}
 \usepackage{dropcaps}
 
 
 
 \setdropcaps{FloralCapitals.ttf}
 \setotherlanguage{french}
-
-\DeclareTOCStyleEntry[linefill=\TOCLineLeaderFill,dynnumwidth=true]{chapter}{chapter}
-
-
-
-\setkomafont{chapter}{\chapterfont\Huge}
-\addtokomafont{disposition}{\normalfont}
-\automark{chapter}
-\lehead{A Little Princess}
-\rohead{\leftmark}
-
-\flushbottom
-
 
 
 \begin{document}
@@ -35,7 +24,7 @@ paper=5.5in:8.5in,
 
 \pagestyle{plain}
 
-\KOMAoptions{headings=openleft}
+
 
 
 \tableofcontents
@@ -45,12 +34,6 @@ paper=5.5in:8.5in,
 
 
 \renewcommand*{\chapterpagestyle}{plain}
-
-%
-%Dedication
-%
-
-
 
 \KOMAoptions{headings=openright}
 
@@ -93,8 +76,10 @@ paper=5.5in:8.5in,
 
 \centering
 \begin{minipage}{\textwidth}
-Frances Hodgson Burnett (1849\textendash 1924) published at least two earlier forms of this story\textemdash a short story »Sara Crewe: or, What Happened at Miss Minchin's«, which was serialised in \textit{St Nicholas Magazine} in 1887\textendash 1888; and a 1902 play \textit{A Little Un-fairy Princess}\textemdash before its 1905 publication by Charles Scribner's Sons in London (UK), under the title \textit{A Little Princess: Being the Whole Story of Sara Crewe Now Being Told for the First Time}.
+Frances Hodgson Burnett (1849--1924) published at least two earlier forms of this story—a short story <Sara Crewe: or, What Happened at Miss Minchin's>, which was serialised in \textit{St Nicholas Magazine} in 1887--1888; and a 1902 play \textit{A Little Un-fairy Princess}—before its 1905 publication by Charles Scribner's Sons in London (UK), under the title \textit{A Little Princess: Being the Whole Story of Sara Crewe Now Being Told for the First Time}.
 \end{minipage}
+\vfill
+gutenberg.org/ebooks/146
 \vfill
 \rule{0.5\textwidth}{.4pt}
 \vfill
@@ -103,26 +88,21 @@ EB Garamond is Georg Mayr-Duffner's free and open source implementation of Claud
 \end{minipage}
 \vfill
 \begin{minipage}{\textwidth}
-Title page is set in »Chelsea«, by Dieter Steffmann. Dropcaps are set in »Floral Capitals«, by Vladimir Nikolic.
+Title page is set in <Chelsea>, by Dieter Steffmann. Dropcaps are set in <Floral Capitals>, by Vladimir Nikolic.
 \end{minipage}
 \vfill
 github.com/georgd/EB-Garamond\\
 steffmann.de\\
 coroflot.com/vladimirnikolic
-
-
 \vfill
 \rule{0.5\textwidth}{.4pt}
 \vfill
-
 \begin{minipage}{\textwidth}
 Title page decoration is by the Gatchell \& Manning engraving firm of Philadelphia (USA), and was originally published in \textit{The Inland Printer} in 1919. Last page decoration and chapter head decorations are taken from \textit{Wark's Modern Educator}, published by Henry Wark in New York (USA) in 1904.
 \end{minipage}
-
 \vfill
 \rule{0.5\textwidth}{.4pt}
 \vfill
-
 \begin{minipage}{\textwidth}
 This typeset is dedicated to the public domain under a Creative Commons CC0 1.0 Universal deed.\end{minipage}
 \vfill
@@ -130,7 +110,6 @@ creativecommons.org/publicdomain/zero/1.0/
 \vfill
 \rule{0.5\textwidth}{.4pt}
 \vfill
-
 Typeset in \LaTeX{}. Last revised \today.
 \thispagestyle{empty}
 
